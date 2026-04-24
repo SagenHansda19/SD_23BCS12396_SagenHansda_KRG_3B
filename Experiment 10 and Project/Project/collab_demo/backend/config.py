@@ -1,0 +1,12 @@
+REDIS_HOST      = "localhost"
+REDIS_PORT      = 6379
+REDIS_DB        = 0
+CHANNEL_NAME    = "collab:edits"
+DOCUMENT_KEY    = "document:state"
+WS_HOST         = "localhost"
+WS_PORT         = 8765
+SIMULATE_USERS  = ["Alice", "Bob", "Carol"]
+SIMULATE_TEXT   = "Hello from Redis PubSub"
+CHAR_DELAY_MIN  = 0.15    # seconds between keystrokes per user
+CHAR_DELAY_MAX  = 0.45
+SNAPSHOT_EVERY  = 5       # chars between version snapshots

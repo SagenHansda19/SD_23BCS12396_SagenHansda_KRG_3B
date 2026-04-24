@@ -1,0 +1,66 @@
+.eventlog-panel {
+  flex: 1;
+  min-height: 0;
+}
+
+.eventlog-content {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.log-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.log-line:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.log-time {
+  color: var(--text-muted);
+}
+
+.log-user {
+  width: 80px;
+  flex-shrink: 0;
+  font-weight: 700;
+}
+
+.log-arrow {
+  color: var(--text-muted);
+}
+
+.log-char {
+  color: var(--text-primary);
+  width: 24px;
+}
+
+.log-doc {
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+  min-width: 0;
+}
+
+.live-dot {
+  color: var(--color-live);
+}
+
+.empty-state {
+  color: var(--text-muted);
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

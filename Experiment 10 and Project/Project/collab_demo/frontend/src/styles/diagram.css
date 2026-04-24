@@ -1,0 +1,109 @@
+.diagram-panel {
+  height: 100%;
+}
+
+.diagram-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.diagram-nodes {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+
+.node {
+  background-color: var(--bg-elevated);
+  border: 2px solid var(--border);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  color: var(--text-primary);
+  transition: all 0.3s;
+  position: relative;
+  z-index: 2;
+}
+
+.node.active {
+  border-color: var(--user-color);
+  background-color: rgba(255, 255, 255, 0.05); /* Simplified faint background */
+  animation: nodePing 0.6s ease-out;
+  animation-delay: var(--delay);
+}
+
+.arrow-container {
+  width: 40px;
+  height: 2px;
+  position: relative;
+}
+
+.arrow-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--border);
+}
+
+.arrow-container-down {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 2px;
+  height: 30px;
+}
+
+.arrow-line-down {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--border);
+}
+
+.traveling-dot {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--user-color);
+  box-shadow: 0 0 8px var(--user-color);
+  animation: dotTravel 0.4s linear forwards;
+  animation-delay: var(--delay);
+  offset-path: path('M 0 4 L 40 4');
+  z-index: 3;
+}
+
+.traveling-dot-down {
+  position: absolute;
+  top: 0;
+  left: -3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--user-color);
+  box-shadow: 0 0 8px var(--user-color);
+  animation: dotTravel 0.4s linear forwards;
+  animation-delay: var(--delay);
+  offset-path: path('M 4 0 L 4 30');
+  z-index: 3;
+}
+
+.diagram-footer {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--text-muted);
+}

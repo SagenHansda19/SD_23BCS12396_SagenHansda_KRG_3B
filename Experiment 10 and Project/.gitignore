@@ -1,0 +1,106 @@
+# ----------------------------
+# OS GENERATED FILES
+# ----------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ----------------------------
+# EDITOR / IDE FILES
+# ----------------------------
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.user
+*.VC.db
+
+# ----------------------------
+# LOG FILES
+# ----------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ----------------------------
+# ENVIRONMENT FILES
+# ----------------------------
+.env
+.env.*
+!.env.example
+
+# ----------------------------
+# NODE.JS
+# ----------------------------
+node_modules/
+dist/
+build/
+.cache/
+.next/
+out/
+
+# ----------------------------
+# PACKAGE LOCK (OPTIONAL)
+# ----------------------------
+# Keep this if you're building apps (recommended)
+# Remove this line if you WANT lock file
+# package-lock.json
+
+# ----------------------------
+# C++ / BUILD FILES
+# ----------------------------
+*.o
+*.obj
+*.exe
+*.out
+*.app
+*.dll
+*.so
+*.dylib
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+Makefile
+
+# ----------------------------
+# COMPILER / DEBUG FILES
+# ----------------------------
+*.gch
+*.pch
+*.ilk
+*.pdb
+*.idb
+
+# ----------------------------
+# TEMP FILES
+# ----------------------------
+tmp/
+temp/
+*.tmp
+
+# ----------------------------
+# ARCHIVES
+# ----------------------------
+*.zip
+*.tar
+*.gz
+*.rar
+
+# ----------------------------
+# COVERAGE / TEST
+# ----------------------------
+coverage/
+
+# ----------------------------
+# MISC
+# ----------------------------
+*.bak
+*.old
